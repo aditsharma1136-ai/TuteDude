@@ -1,0 +1,41 @@
+.container{
+    width: 600px;
+    height: 600px;
+    background-color: aqua;
+}
+
+.box{
+    color: white;
+    width: 100px;
+    height: 100px;
+}
+
+.Static{
+    position: static;
+    background-color: black;
+     top: 200px;
+    left: 100px;
+}
+.Relative{
+    position: relative;
+    background-color: red;
+    top: 200px;
+    left: 100px;
+}
+.Absolute{
+    position: absolute;
+    background-color: rgb(9, 9, 111);
+    top: 300px;
+    left: 200px;
+}
+.Fixed{
+    position: fixed;
+    background-color: rgb(117, 117, 21);
+   
+}
+.Sticky{
+    position: sticky;
+    background-color: blueviolet;
+     top: 200px;
+    left: 100px;
+}

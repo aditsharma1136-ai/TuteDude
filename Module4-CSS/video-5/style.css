@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.box2{
+    padding: 70px;
+}
+
+div{
+    border: 15px solid lightblue;
+    padding: 35px 40px 100px 50px; /* Top -> Right -> Bottom -> Left */
+    margin: 25px 35px 45px 55px;
+    width: 250px;
+    height: 250px;
+}

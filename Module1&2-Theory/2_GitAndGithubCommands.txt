@@ -1,0 +1,41 @@
+Git >> Version Control
+        >> V1
+        >> V2
+        >> V3
+        >> New V4
+
+    >> It is distributed (on cloud)
+    >> Collaboration
+    >> Tracking Changes
+    >> Recovery
+
+hhtps://git-scm.com/downloads
+    >> gitHub
+    >> BitBucket
+    >> GitLabs
+    >> GitPod
+    
+>> For 1st time need to configure github in our system
+    git config --global user.name "adit.sharma.1136-ai"
+    git config --global user.email "adit.sharma.1136@gmail.com"
+
+>> Mandatory Commands :
+    >> git init
+    >> git remote add origin https://github.com/aditsharma1136-ai/Git-Demo.git
+
+>> git pull origin main
+>> git status
+
+>> git add .
+>> git status
+>> git commit -m "Commit Message"
+>> git push
+
+>> Create a New Branch
+>> git checkout -b "Day1Branch"
+
+>> Switch the branch
+>> git checkout "BranchName"
+
+>> To clone the Code
+>> git clone https://github.com/aditsharma1136-ai/Git-Demo.git

@@ -1,0 +1,29 @@
+main{
+    border: 2px solid black;
+    /* border-radius: 20px; */
+    /* %, vw (view width), vh (view height), px (pixels), em, rem */
+    width: 50%;
+    /* width: 50vw; */
+}   
+
+/* html{
+    font-size: 1em;
+} */
+
+section{
+    border: 5px dotted blue;
+    /* width: 70vw; */
+   
+}
+
+/* body{
+    font-size: 2em;
+} */
+
+/* header{
+    font-size: 2em;
+} */
+
+/* h2{
+    font-size: 4rem;
+} */

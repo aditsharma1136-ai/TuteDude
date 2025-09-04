@@ -1,0 +1,45 @@
+.container {
+    /* width: 400px; */
+    /* height: 400px; */
+    /* border: 1px solid black; */
+    /* overflow: visible; */
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+    /* overflow: auto; automatically make it scrollable */
+    text-align: justify;
+}
+
+.subcontainer {
+    /* height: 60vh; */
+    overflow: auto;
+}
+
+.img1 {
+    /* float: left; */
+    float: right;
+    /* float: none; */
+    /* float: inherit; */
+    width: 200px;
+    height: 200px;
+}
+
+.img2 {
+    float: left;
+    /* float: right; */
+    /* float: none; */
+    /* float: inherit; */
+    width: 200px;
+    height: 200px;
+}
+
+.p1 {
+    /* clear: left; */
+    /* clear: right; */
+    /* clear: both; */
+}
+
+.p2 {
+    /* clear: left; */
+    /* clear: right; */
+    /* clear: both; */
+}

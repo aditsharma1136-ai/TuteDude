@@ -1,0 +1,20 @@
+h1{
+    /* background-color: rgb(16, 70, 80); */
+    /* color: pink; */
+    /* text-align: center; */
+    /* text-decoration: underline; */
+    /* text-decoration-style: wavy; */
+    
+}
+p{
+    /* text-align: justify; */
+    /* color: white; */
+    /* text-indent: 70px; */
+    /* letter-spacing: 5px; */
+    /* line-height: 1.2rem; */
+    /* word-spacing: 10px; */
+    /* white-space: ; */
+    /* color: transparent; */
+    /* text-shadow: 1px 1px  5px rgb(255, 0, 0); */
+    font-family: cursive , Times, serif;
+}
