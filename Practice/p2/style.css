@@ -2,25 +2,26 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
 }
 body{
     font-family: cursive;
+    background: linear-gradient(to right,rgb(238, 115, 135),rgb(239, 210, 215),rgb(134, 210, 235));
+
 }
 .nav-bar{
-    width: 100%;
-    margin: auto;
-    padding: 15px 0;
+    width: 100vw;
+    padding: 10px 40px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    background:linear-gradient(to right,rgb(238, 115, 135),rgb(239, 210, 215),rgb(134, 210, 235));
-    text-indent: 500px;
+    align-items: center;
+    box-shadow: 0px 0px 20px lightcoral;
 }
 .nav-bar ul li{
     list-style: none;
-    display: inline-block;
-    margin: 0 15px;  
-    word-spacing: 45px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
 }
 .nav-bar ul li a{
     text-decoration: none;
@@ -38,7 +39,6 @@ body{
     gap: 20px;
     justify-content: space-evenly;
     align-items: center;
-    background: linear-gradient(to right,rgb(238, 115, 135),rgb(239, 210, 215),rgb(134, 210, 235));
 }
 .left-text{
     flex-basis: 30%;
