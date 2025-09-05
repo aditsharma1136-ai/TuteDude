@@ -54,13 +54,13 @@
     /* flex-basis: 25%; */
 }
 
-#box-1{
+/* #box-1{ */
     /* order: 1; */
     /* flex-grow: 1; */
     /* flex-shrink: 2; */
     /* flex: 0 0 200px; flex-(grow, shrink, basis) */
-}
-#box-4{
+/* } */
+/* #box-4{ */
     /* order: 4; */
     /* flex-grow: 2; */
     /* flex-shrink: 4; */
@@ -68,4 +68,4 @@
     /* align-self: stretch; */
     /* align-self: flex-start; */
     /* align-self: flex-end; */
-}
+/* } */
