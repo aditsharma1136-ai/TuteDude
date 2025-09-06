@@ -1,0 +1,33 @@
+body{
+    background-color: aqua;
+}
+/* 
+@media (orientation: portrait){
+    body{
+        background-color: lightpink;
+    }
+} */
+
+/* @media (width <= 500px){
+    body{
+        background-color: lightpink;
+    }
+}
+
+@media (width <= 300px){
+    body{
+        background-color: lightslategray;
+    }
+} */
+
+@media ( min-width: 500px) and (max-width: 600px){
+    body{
+        background-color: lightpink;
+    }
+}
+
+/* @media (width <= 300px){
+    body{
+        background-color: lightslategray;
+    }
+} */
