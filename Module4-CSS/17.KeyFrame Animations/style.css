@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: cornflowerblue;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 200px;
+}
+
+.container{
+    width: 280px;
+    height:280px;
+    border: 3px solid white;
+    animation: Orbit 4s linear infinite;
+    border-radius: 50%;
+}
+
+.box{
+    width: 80px;
+    height: 80px;
+    background-color: lightblue;
+    /* transition: 1s ease-in-out ; */
+
+    border-radius: 50%;
+
+    /* animation-name: ShiftTheBox; */
+    /* animation-name: Slide-in; */
+    animation-name: Orbit;
+    animation-duration: 3s;
+    /* animation-iteration-count: infinite; */
+    /* animation-direction: reverse; */
+    /* animation-direction: alternate; */
+    /* animation-direction: alternate-reverse; */
+    /* animation-timing-function: ease-in; */
+    /* animation-fill-mode: forwards; */
+}
+
+/* .box:hover{
+    transform: translate(195px);
+} */
+
+@keyframes Orbit {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes Slide-in{
+    /* 0%{
+        transform: translate(-200px);
+    }
+    100%{
+        transform: translate(195px);
+    } */
+
+    /* from{
+        transform: translate(-200px);
+    }
+    to{
+        transform: translate(195px);
+    } */
+} 
+
+@keyframes ShiftTheBox{
+    0%, 100%{
+        transform: translate(0, 0);
+        /* border-radius: 50%; */
+    }
+    25%{
+        transform: translate(195px, 0);
+        background-color: lightpink;
+    }
+    50%{
+        transform: translate(195px, 195px);
+        background-color: lightseagreen;
+    }
+    75%{
+        transform: translate(0, 195px);
+    }
+}
+
+
+.loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.dot{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    animation: Loading 1s ease-in alternate infinite;
+}
+
+.dot:nth-child(even){
+    animation-delay: 0.1s;
+}
+
+/* .dot:nth-child(4){
+    animation-delay: 0.1s;
+} */
+
+@keyframes Loading{
+    from{
+        transform: translatey(-10px)
+    }
+    to{
+        transform: translatey(10px);
+    }
+}

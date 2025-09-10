@@ -1,0 +1,45 @@
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    margin: 100px auto;
+    /* transition: 1s; */
+    /* transition-duration: 0.9s ; */
+
+    transition-duration: 0.8s;
+    /* transition-delay: 0.5s; */
+    /* transition-timing-function: ease-in-out; */
+    /* transition-timing-function: cubic-bezier(1, 0.19, 0, 0.96); */
+    transition-property: background-color, border-radius, transform;
+
+}
+
+.box:hover{
+    background-color: chartreuse;
+    border-radius: 50%;
+    transform: rotate(180deg);
+}
+
+/* nav{
+    background-color: black;
+    color: white;
+} */
+
+.list{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.item{
+    font-size: 1rem;
+    transition: 0.3s ease-in;
+    padding: 8px;
+
+}
+
+.item:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+    transform: translatey(-10px);
+}
