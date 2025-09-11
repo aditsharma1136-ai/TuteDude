@@ -1,85 +1,103 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 
 }
-body{
+
+body {
     font-family: cursive;
-    background: linear-gradient(to right,rgb(238, 115, 135),rgb(239, 210, 215),rgb(134, 210, 235));
+    background: linear-gradient(to right, rgb(238, 115, 135), rgb(239, 210, 215), rgb(134, 210, 235));
 
 }
-.nav-bar{
-    width: 100vw;
-    padding: 10px 40px;
+/* #nav{
     display: flex;
-    justify-content: space-between;
+    padding-left: 400px;
+} */
+.nav-bar {
+    padding: 15px;
+    display: flex;
     align-items: center;
-    box-shadow: 0px 0px 20px lightcoral;
-}
-.nav-bar ul li{
-    list-style: none;
-    display: flex;
     justify-content: space-between;
-    gap: 40px;
+    padding: 20px 100px 0 300px;
+
 }
-.nav-bar ul li a{
-    text-decoration: none;
+
+.nav-bar ul {
+    display: flex;
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 50px;
+    /* spacing between items */
+    list-style: none;
+}
+
+.nav-bar ul li a {
     color: grey;
-    font-size: 15px;
-    
+    text-decoration: none;
 }
-.nav-bar ul li a:hover{
+
+.nav-bar ul li a:hover {
     color: white;
     transition: all 1s;
 }
-.container{
+
+.container {
     min-height: 100vh;
     display: flex;
     gap: 20px;
     justify-content: space-evenly;
     align-items: center;
 }
-.left-text{
+
+.left-text {
     flex-basis: 30%;
 }
-.left-text h2{
+
+.left-text h2 {
     color: #fff;
     font-size: 2rem;
     text-align: center;
 }
-.left-text p{
+
+.left-text p {
     text-align: center;
     color: #fff;
 }
-.right-imgs{
+
+.right-imgs {
     flex-basis: 50%;
     display: grid;
     gap: 10px;
     grid-auto-rows: 120px;
     grid-template-columns: repeat(3, 1fr);
 }
-.row{
+
+.row {
     grid-row: span 2;
     background-position: top;
 }
-.col{
+
+.col {
     grid-column: span 2;
     background-position: top;
     transition: all 1s ease-in-out;
 }
-.box-imgs{
+
+.box-imgs {
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
-    background-size : cover;
+    background-size: cover;
     background-position: end;
     background-color: rgb(110, 81, 81);
     background-blend-mode: hard-light;
 
 }
-.box-imgs:hover{
+
+.box-imgs:hover {
     transition: all 1s ease-in-out;
     background-position: center;
     transform: scale(1.2);

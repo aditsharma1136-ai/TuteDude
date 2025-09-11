@@ -1,69 +1,155 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.container{
+.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 5px;
     padding: 20px;
+    width: 100vw;
+
 }
-.container >p{
+
+/* .container >p{
+    margin-left: 30px;
+    color: rgb(95, 95, 95);
+    font-size: 1.3rem;
+    font-weight: bold;
+} */
+
+.logo {
     margin-left: 30px;
     color: rgb(95, 95, 95);
     font-size: 1.3rem;
     font-weight: bold;
 }
-.navbar ul li{
-    list-style: none;
+
+.navbar ul {
     display: flex;
-    gap: 50px;
+    gap: 50px;   /* spacing between items */
+    list-style: none;
 }
-.navbar ul li a{
+
+.navbar ul li a {
     color: grey;
     text-decoration: none;
 }
-.username{
+
+
+.username {
     font-weight: bold;
-    padding:15px 25px;
+    padding: 15px 25px;
     font-size: 0.7rem;
     border-radius: 10px;
     color: rgb(49, 176, 255);
     background-color: rgb(220, 242, 255);
     margin-right: 30px;
 }
-.hero{
+
+.hero {
     margin: 100px 0px 100px 150px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 
 }
-h1{
+
+h1 {
     font-size: 3rem;
     line-height: 1.5;
 }
-#h-1{
+
+#h-1 {
     font-size: 3rem;
     color: rgb(49, 176, 255);
 }
-p{
+
+p {
     line-height: 1.6;
     font-size: large;
     color: lightgrey;
 }
-.right img{
+
+.right img {
     width: 600px;
     height: 500px;
 }
-button{
+
+button {
     margin-top: 35px;
     padding: 15px 20px;
     background-color: rgb(49, 176, 255);
     color: white;
     border: none;
     border-radius: 10px;
+}
+
+@media (min-width: 200px) and (max-width: 645px) {
+    h1 {
+        /* width: 100px; */
+        font-size: 2rem;
+        align-items: center;
+    }
+
+    #h-1 {
+        font-size: 2rem;
+        align-items: start;
+    }
+
+    .hero {
+        display: block;
+        justify-content: left;
+        align-items: start;
+    }
+
+    .right img {
+        width: 300px;
+        height: 250px;
+    }
+
+    .logo {
+        /* padding: 0 2px; */
+        color: rgb(95, 95, 95);
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .container {
+        display: flex;
+        /* justify-content: space-between; */
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 20px 0;
+        width: 100vw;
+    }
+
+    .navbar ul{
+        gap: 30px;
+    }
+
+     .navbar ul li {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly; 
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .navbar ul li a {
+        color: grey;
+        text-decoration: none;
+        font-size: 0.7rem;
+    } 
+
+    .username {
+        padding: 5px;
+        border-radius: 5px;
+    }
+
 }
