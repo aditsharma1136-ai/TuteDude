@@ -25,7 +25,7 @@
             </nav>
         </div>
     </header>
-    
+
 
     <main>
         <section id="home" class="hero">
@@ -35,6 +35,142 @@
                 <div class="hero-buttons">
                     <a href="#menu" class="btn btn-primary">View Menu</a>
                     <a href="#contact" class="btn btn-secondary">Main reservation</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="menu">
+            <div class="container">
+                <h2 class="section-title">Our Menu</h2>
+                <p class="section-subtitle">Discover our carefully crafted dishes.</p>
+                <div class="menu-category">
+                    <div class="menu-category">
+                        <h3>Appetizers</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <h4>Bruschetta Italliana</h4>
+                                    <p>Freash tomatoes, basel, and mozzarella on toasted bread.</p>
+                                </div>
+                                <span class="price">$12</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <h4>AntipasatoPlatter</h4>
+                                <p>Selected of cured meats, cheeses and marinated vegitables.</p>
+                            </div>
+                            <span class="price">$18</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Bella Vista</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Our Story</h3>
+                        <p>
+                            Foundation in 1985 by the Rossel Family, Bella Vista has been serving authentic Italian
+                            cusines for over three decades. Our passsion for traditional recipes and fresh ingredients
+                            has been made us a beloved destination for food lovers.
+                        </p>
+                        <p>
+                            Every dish is prepared with love and attention to detail, using passed down through
+                            generations of Italian chefs.
+                        </p>
+                    </div>
+
+                    <div class="about-image">
+                        <img src="https://i0.wp.com/www.halaltimes.com/wp-content/uploads/2024/03/muslim-banquet.jpg?resize=740%2C494&ssl=1"
+                            alt="restaurant interior design">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Contact Us</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+
+                        <div class="contact-items">
+                            <strong>Address:</strong>
+                            <p>123 Italian street, City Center, NY 10001</p>
+                        </div>
+
+                        <div class="contact-items">
+                            <strong>Phone:</strong>
+                            <p>(555) 123-4567</p>
+                        </div>
+
+                        <div class="contact-items">
+                            <strong>Email:</strong>
+                            <p>info@bellavista.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h3>Make a Reservation</h3>
+                        <form action="">
+                            <div class="form-group">
+                                <label for="name">Full Name:</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone:</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="date">Reservation Date:</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="Time">Time:</label>
+                                <select name="time" id="time" required>
+                                    <option value="">Select Time</option>
+                                    <option value="18:00">6:00 PM</option>
+                                    <option value="19:00">7:00 PM</option>
+                                    <option value="20:00">8:00 PM</option>
+                                    <option value="21:00">9:00 PM</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="guests">Number of Guests:</label>
+                                <select name="guests" id="guests" required>
+                                    <option value="">Select Guests</option>
+                                    <option value="1">1 Guest</option>
+                                    <option value="2">2 Guest</option>
+                                    <option value="3">3 Guest</option>
+                                    <option value="4">4 Guest</option>
+                                    <option value="5">5+ Guest</option>
+                                </select>
+                            </div>
+
+                              <div class="form-group">
+                                <label for="message">Special Requests:</label>
+                                <textarea name="message" id="message" rows="4" placeholder="Any special dietry requirements or requests..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit Reservation</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
