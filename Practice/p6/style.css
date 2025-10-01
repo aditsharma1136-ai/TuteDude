@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+button{
+    padding: 1rem;
+    color: white;
+    background-color: black;
+    font-size: 1rem;
+    margin: 2rem;
+    border: none;
+    border-radius: 8px;
+}
+button:hover{
+    border: 1px solid black;
+    background-color: grey;
+    color: white;
+    transform: translateY(-2px);
+}
+button:active{
+    border: 1px solid black;
+    background-color: transparent;
+    color: black;
+    transform: translateY(-2px);
+}
