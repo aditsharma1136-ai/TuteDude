@@ -44,13 +44,16 @@ body {
     border-radius: 8px;
     transition: all 0.3s ease-in;
 }
-.links li{
+
+.links li {
     transition: all 0.3s ease-in;
 }
-.links li:hover{
+
+.links li:hover {
     transform: translateY(-2px);
 
 }
+
 .links li a:hover {
     background-color: #87A8B6;
 }
@@ -64,7 +67,7 @@ body {
     z-index: 1200;
 }
 
-.section {
+.home {
     height: 100vh;
     margin-top: 85px;
     background: linear-gradient(rgba(138, 138, 138, 0.5), #62606080), url(https://images.unsplash.com/photo-1602088113235-229c19758e9f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHZhY2F0aW9ufGVufDB8fDB8fHww) center/cover;
@@ -73,17 +76,18 @@ body {
     align-items: center;
 }
 
-.section-content h2{
+.section-content h2 {
     font-size: 3rem;
     margin-bottom: 1.5rem;
     text-align: center;
     color: #3f6265;
 }
-.section-content p{
+
+.section-content p {
     font-size: 1.2rem;
     margin-bottom: 4.5rem;
     text-align: center;
-    color:#233b3d;
+    color: #233b3d;
 }
 
 .btn {
@@ -123,4 +127,87 @@ body {
     color: #2d4d4f;
     transform: translateY(-2px);
 
+}
+
+.page2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.services {
+    padding: 7rem 0;
+}
+
+.right-images {
+    flex-basis: 50%;
+    display: grid;
+    gap: 10px;
+    grid-auto-rows: 120px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.col {
+    grid-column: span 2;
+    background-position: top;
+}
+
+.row {
+    grid-row: span 2;
+    background-position: top;
+
+}
+
+.box-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-size: cover;
+    background-position: end;
+    background-color: rgb(110, 81, 81);
+    background-blend-mode: hard-light;
+}
+
+.box-imgs:hover {
+    transition: all 1s ease-in-out;
+    background-position: center;
+    transform: translateY(-3px);
+}
+
+.page-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+.left h2 {
+    font-size: 3rem;
+    color: #3F6265;
+    margin-bottom: 1.5rem;
+}
+
+.room-1 {
+    width: 100%;
+    padding: 1rem 1.5rem 1rem 1rem;
+    border: 2px solid grey;
+    border-radius: 8px;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    text-align: left;
+}
+.room-1:hover{
+    transform: translateY(-2px);
+    
+}
+
+.room-2 {
+    width: 100%;
+    padding: 1rem 1.5rem 1rem 1rem;
+    border: 2px solid grey;
+    border-radius: 8px;
+}
+.bed img{
+    width: 27rem;
 }
