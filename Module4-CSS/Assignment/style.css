@@ -4,158 +4,227 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-html, body{
+
+.container {
     width: 100%;
-    height: 100%;
-}
-
-/* here starts the navigation bar section */
-
-.nav {
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-}
-
-.nav h2 {
-    font-size: 1.5rem;
-    color: rgb(95, 95, 95);
-    font-weight: 600;
-    margin-left: 4vw;
-
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0 6rem;
 }
 
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 50px;
+    justify-content: space-between;
+    /* margin-top: 1.5rem; */
+    padding-top: 1.5rem;
+    margin-bottom: 6rem;
+    /* padding: 1.5rem 6rem; */
+}
+
+.logo h1 {
+    color: #314257;
+}
+
+.navbar ul {
     list-style: none;
+    display: flex;
+    gap: 2rem;
+    /* padding: 0 20px; */
 }
 
-.navbar li a {
-    color: grey;
+.navbar ul li a {
+    color: #8D9A9D;
     text-decoration: none;
+    padding: 5px 10px;
+    font-size: 1.1rem;
 }
 
-.button {
-    background-color: rgb(220, 242, 255);
-    margin-right: 4vw;
-    padding: 0.4vw 1vw;
-    border-radius: 10px;
-
+.btn button {
+    padding: 1.2rem 1rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #3BBAFF;
+    background-color: #E6F6FF;
 }
-
-.button a {
-    color: rgb(49, 176, 255);
-    text-decoration: none;
-    font-size: 0.9rem;
-}
-
-/* Here starts the Contents and image */
 
 .hero {
-    height: calc(100% - 80px);
+    flex-basis: 88%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 5rem;
-    flex-wrap: wrap;
+    /* align-items: center; */
+    /* justify-content: space-between; */
 }
 
-.left {
-    padding: 3vw 5vw;
+.left,
+.right {
+    flex-basis: 50%;
 }
-
-.left h1 {
-    font-size: 3rem;
+.left{
+    padding: 65px 0 0 80px;
+}
+.left h1{
+    font-size: 3.5rem;
+    font-weight: bolder;
     line-height: 4rem;
+    color: #4B5B67;
 }
-
-span {
-    font-size: 3rem;
-    font-weight: bold;
+.left p{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #889DA2;
 }
-
-#h-1 {
-    color: rgb(49, 176, 255);
-}
-
-.left p {
-    margin-top: 20px;
-    padding-bottom: 20px;
-    color: darkgrey;
-    width: 430px;
-    font-size: large;
-    line-height: 1.8rem;
-}
-
-.service-btn {
-    display: inline-block;
-    background-color: rgb(49, 176, 255);
-    margin: 10px;
-    padding: 15px 10px;
+.btn-left button{
+    padding: 1.5rem 4rem;
+    border: none;
     border-radius: 10px;
-}
-
-.service-btn a {
-    text-align: center;
-    font-size: smaller;
+    font-size: 1.1rem;
+    font-weight: bold;
     color: white;
-    text-decoration: none;
+    background-color: #30B4FF;
 }
 
-.right img {
-    width: 530px;
-    height: 450px;
+
+.right {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.right img{
+    /* width: 550px;
+    height: 530px; */
+    min-width: 80%;
+    height: auto;
 }
 
-@media (max-width: 600px) {
 
-    span{
-        font-size: 2rem;
-        font-weight: bold;
-    }
 
-    .nav h2 {
-        font-size: 1rem;
-    }
+/* ---------- 📱 Responsive Design Starts Here ---------- */
 
-    .button a {
-        font-size: 0.7rem;
+/* 🧩 Medium screens (Tablets and small laptops) */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 3rem;
     }
 
     .navbar {
-        gap: 2px;
+        flex-wrap: wrap;
+        gap: 1rem;
     }
 
-    .navbar li a {
-        font-size: 0.7rem;
-        padding: 5px;
+    .navbar ul {
+        gap: 1.2rem;
     }
 
-    .nav {
-        padding: 2rem 1rem;
+    .left {
+        padding: 40px 0 0 40px;
+    }
+
+    .left h1 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+
+    .left p {
+        font-size: 1.2rem;
+    }
+
+    .right img {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 2rem;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 2rem;
     }
 
     .left {
         padding: 0;
     }
 
-    .left p {
-        width: 100%;
+    .left h1 {
+        font-size: 2.5rem;
+        line-height: 3rem;
     }
 
-    .left h1 {
-        font-size: 2rem;
+    .left p {
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+    }
+
+    .btn-left button {
+        padding: 1.2rem 3rem;
+        font-size: 1rem;
     }
 
     .right img {
-        height: 250px;
-        width: 300px;
+        max-width: 80%;
+        height: auto;
     }
 
+    .navbar ul {
+        gap: 1rem;
+    }
+
+    .navbar ul li a {
+        font-size: 1rem;
+    }
+
+    .btn button {
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .navbar ul li a {
+        font-size: 0.95rem;
+    }
+
+    .left h1 {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
+
+    .left p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .btn-left button {
+        padding: 1rem 2rem;
+        font-size: 0.95rem;
+    }
+
+    .right img {
+        width: 90%;
+    }
 }
