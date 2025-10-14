@@ -46,3 +46,31 @@
     background-repeat: no-repeat;
     background-position: top center;
 }
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .banner .slider {
+    width: 160px;
+    height: 200px;
+    top: 12%;
+    left: calc(50% - 80px);
+    transform: perspective(900px);
+  }
+  .banner .slider .item {
+    transform: 
+        rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+        translateZ(400px);
+  }
+  .banner .model {
+    background-size: auto 115%;
+  }
+}
+
+/* For large screens (default styles apply) */
+@media (min-width: 1025px) {
+  .banner .slider {
+    width: 200px;
+    height: 250px;
+    top: 10%;
+    left: calc(50% - 100px);
+  }
+}
