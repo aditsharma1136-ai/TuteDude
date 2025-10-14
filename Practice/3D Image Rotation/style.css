@@ -47,7 +47,7 @@
     background-position: top center;
 }
 
-@media (min-width: 601px) and (max-width: 1024px) {
+@media (min-width: 401px) and (max-width: 1024px) {
   .banner .slider {
     width: 160px;
     height: 200px;
